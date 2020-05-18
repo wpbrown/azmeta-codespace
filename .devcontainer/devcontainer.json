@@ -1,0 +1,14 @@
+{
+  "extensions": [
+    "ms-python.python"
+  ],
+
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "terminal.integrated.shellArgs.linux": ["-l"]
+  },
+  
+  "dockerFile": "Dockerfile",
+
+  "postCreateCommand": "./.devcontainer/post-create.sh &> /tmp/post-create.log"
+}
