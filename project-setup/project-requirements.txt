@@ -4,3 +4,4 @@ ipykernel
 jupyter
 matplotlib
 pandas
+papermill
