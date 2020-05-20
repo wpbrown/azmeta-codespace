@@ -10,6 +10,6 @@ RUN set -ex; \
     export DEBIAN_FRONTEND=noninteractive; \
     apt-get update; \
     apt-get install --yes apt-utils; \
-    apt-get install --yes tzdata libicu66 sudo vim python3-pip python3-venv;
+    apt-get install --yes tzdata libicu66 sudo vim python3-pip python3-venv nodejs npm;
 
 USER codespace
