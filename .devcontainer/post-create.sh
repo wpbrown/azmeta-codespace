@@ -25,3 +25,6 @@ pipx install --include-deps jupyterlab
 
 # Setup the default project environment
 $PROJECT_SETUP_DIR/setup-project.sh
+
+# Temporary workaround (issue #2)
+mkdir -p $HOME/.cache/black/19.10b0
