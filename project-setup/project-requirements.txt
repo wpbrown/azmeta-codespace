@@ -1,3 +1,4 @@
 ipykernel
-pandas
+jupyter
 matplotlib
+pandas
