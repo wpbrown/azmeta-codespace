@@ -1,6 +1,7 @@
 git+https://github.com/wpbrown/azmeta-libs#egg=azmeta&subdirectory=azmeta
 git+https://github.com/wpbrown/azmeta-libs#egg=azmeta-notebook&subdirectory=azmeta-notebook
 ipykernel
+ipywidgets
 jupyter
 matplotlib
 pandas

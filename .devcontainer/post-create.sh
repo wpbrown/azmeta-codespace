@@ -23,6 +23,11 @@ pipx install azure-cli
 # Install Jupyter Lab
 pipx install --include-deps jupyterlab
 
+# Install plotly support
+pipx inject jupyterlab ipywidgets
+jupyter labextension install jupyterlab-plotly@4.8.1
+jupyter labextension install @jupyter-widgets/jupyterlab-manager plotlywidget@4.8.1
+
 # Setup the default project environment
 $PROJECT_SETUP_DIR/setup-project.sh
 
