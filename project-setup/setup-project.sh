@@ -7,3 +7,4 @@ mkproject -r "$DIR/project-requirements.txt" "$PROJECT_NAME"
 ipython kernel install --user --name=$(basename $VIRTUAL_ENV)
 mkdir .vscode
 cp "$DIR/workspace-settings.json" .vscode/settings.json
+cp "$DIR/workspace-tasks.json" .vscode/tasks.json
