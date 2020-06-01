@@ -10,5 +10,5 @@
   
   "dockerFile": "Dockerfile",
 
-  "postCreateCommand": "./.devcontainer/post-create.sh &> /tmp/post-create.log"
+  "postCreateCommand": "./.devcontainer/post-create.sh 1> >(tee /tmp/post-create.out ) 2> >(tee /tmp/post-create.err >&2 )"
 }
