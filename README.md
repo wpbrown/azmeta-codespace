@@ -2,6 +2,36 @@
 
 Setup a pre-configured [Codespace](https://visualstudio.microsoft.com/services/visual-studio-codespaces/) for Azure metadata analysis.
 
+The Docker container for this Codespace is based on Ubuntu 20.04 with the following software pre-installed:
+* [buildpack-deps](https://hub.docker.com/_/buildpack-deps/): Git, Curl, GCC
+* Python 3.8
+* Node.js 12
+
+In the Codespace the following is installed for the `codespace` user:
+
+* Pipx
+* Virtualenv
+* Virtualenvwrapper
+* Jupyter Lab
+  * Plotly Widgets
+
+A Visual Studio Code workspace and a corresponding virtualenv called `myproject` is created in `$HOME/workspace/myproject`. It is recommended to switch to this workspace and clone your azmeta-based code and notebooks from Git to there.
+
+The `myproject` virtualenv has some typicaly libraries for Azure metadata analysis pre-installed:
+
+* azmeta
+* azmeta-notebook
+* azmeta-dataflow
+* dagster
+* jupyter (to support editing notebooks in Visual Studio Code)
+* kqlmagic
+* matplotlib
+* pandas
+* papermill
+* openpyxl
+
+`sudo` is enabled for the `codespace` user and the default password is `codespace`.
+
 # Deploy
 
 1. [Create](https://docs.microsoft.com/en-us/visualstudio/online/how-to/browser#create-a-plan) a Codespaces plan.
@@ -20,6 +50,7 @@ Setup a pre-configured [Codespace](https://visualstudio.microsoft.com/services/v
 
    ![Screenshot of the command in a terminal.](./docs/images/switchworkspace.png)
 
+5. Open a terminal again in the new workspace and login to the Azure CLI with the `az login` command.
 
 # Connect to your Codespace 
 
