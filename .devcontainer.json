@@ -1,0 +1,9 @@
+{
+  "extensions": [
+    "ms-python.python"
+  ],
+  "dockerFile": "Dockerfile",
+  "postCreateCommand": [
+    "/opt/azmeta/libexec/init-codespace.sh"
+  ]
+}
