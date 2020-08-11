@@ -8,3 +8,4 @@ pandas
 papermill
 Kqlmagic
 openpyxl
+xlrd

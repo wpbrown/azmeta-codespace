@@ -1,5 +1,6 @@
 name: Update Official Docker Image
-on: [push]
+on:
+  workflow_dispatch:
 
 jobs:
     build:
@@ -15,4 +16,5 @@ jobs:
                 password: ${{ secrets.DOCKER_PASSWORD }}
                 add_git_labels: true
                 repository: rebeagle/azmeta
-                tags: latest
+                tags: testing
+
